@@ -2,7 +2,7 @@ fn main() {
     let msg = String::from("Can I borrow");
     take_ownership(&msg);
 
-    // Crabby
+    // &Crabby -> refer to the address, not the straight value 
     let mut treasure = String::from("Gold");
     let focus = &treasure;
     let fang = &treasure;
