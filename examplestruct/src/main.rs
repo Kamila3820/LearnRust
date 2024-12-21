@@ -32,4 +32,14 @@ fn main() {
     ///////////////////////////////////
     //Call fn from print.rs
     print::run();
+
+    let mut word1 = String::from("Pencil");
+
+    let word2 = &word1;
+
+    let mut word3 = word2.to_string();
+
+    word3.push_str(" Apple");
+
+    println!("{:?}", word3);
 }
