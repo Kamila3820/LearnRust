@@ -45,4 +45,23 @@ fn main() {
         println!("z = {}", z);
         z+=1;
     }
+
+
+    // Crabby ex
+    let treasures = ["Gold", "Silver", "Crystal Gem", "Emerald", "Daimaond", "Redstone"];
+    let mut energy = 5;
+
+    for i in treasures.iter() {
+        if energy <= 0 {
+            println!("Crabby's energy out of remaining");
+            break;
+        } else if i == &"Ruby Gem" {
+            println!("Crabby found Ruby Gem at");
+            println!("Energy remaining: {}", energy);
+            break;
+        }
+        energy -= 1;
+
+    }
+
 }
