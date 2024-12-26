@@ -1,7 +1,12 @@
 macro_rules! say_yes {
-    () => (println!("Yess!"));
+    (yes) => {
+        println!("Yes");
+    };
+    ($name:expr) => {
+        println!("Nah, {}", $name);
+    };
 }
 
 fn main() {
-    say_yes!();
+    say_yes!(yes);
 }
