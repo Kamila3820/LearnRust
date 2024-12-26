@@ -33,6 +33,8 @@ fn main() {
     let fang = Bow;
     let focus = Potion;
 
+    five.use_gear();
+
     get_gear(five);
     get_gear(fang);
     get_gear(focus);
